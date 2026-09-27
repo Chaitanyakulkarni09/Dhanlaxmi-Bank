@@ -1,0 +1,41 @@
+{
+  "model_name": "Isolation Forest",
+  "model_version": "isolation_v1",
+  "raw_columns": [
+    "Applicant_Income",
+    "Coapplicant_Income",
+    "Loan_Amount",
+    "Credit_Score",
+    "Existing_Loans",
+    "DTI_Ratio",
+    "Late_Payments_12M",
+    "Credit_History_Years",
+    "Loan_Term",
+    "Savings",
+    "Collateral_Value"
+  ],
+  "feature_columns": [
+    "Income",
+    "Loan_Amount",
+    "Credit_Score",
+    "Existing_Loans",
+    "DTI_Ratio",
+    "Late_Payments",
+    "Credit_History",
+    "Loan_Term",
+    "Loan_to_Income",
+    "Savings_Ratio",
+    "Collateral_Ratio"
+  ],
+  "threshold": 0.5572972276583994,
+  "score_definition": "-pipeline.score_samples",
+  "review_rule": "anomaly_score >= threshold",
+  "validation_review_fraction": 0.02,
+  "python_version": "3.13.2",
+  "packages": {
+    "scikit-learn": "1.7.2",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1",
+    "joblib": "1.5.2"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "model_name": "XGBoost",
+  "model_version": "approval_v1",
+  "raw_columns": [
+    "Applicant_Income",
+    "Coapplicant_Income",
+    "Employment_Status",
+    "Age",
+    "Marital_Status",
+    "Dependents",
+    "Credit_Score",
+    "Existing_Loans",
+    "DTI_Ratio",
+    "Savings",
+    "Collateral_Value",
+    "Loan_Amount",
+    "Loan_Term",
+    "Loan_Purpose",
+    "Property_Area",
+    "Education_Level",
+    "Gender",
+    "Employer_Category",
+    "Employment_Years",
+    "Credit_History_Years",
+    "Late_Payments_12M",
+    "Existing_Monthly_EMI",
+    "Quoted_Interest_Rate",
+    "Proposed_Monthly_EMI"
+  ],
+  "feature_columns": [
+    "Applicant_Income",
+    "Coapplicant_Income",
+    "Employment_Status",
+    "Age",
+    "Marital_Status",
+    "Dependents",
+    "Credit_Score",
+    "Existing_Loans",
+    "DTI_Ratio",
+    "Savings",
+    "Collateral_Value",
+    "Loan_Amount",
+    "Loan_Term",
+    "Loan_Purpose",
+    "Property_Area",
+    "Education_Level",
+    "Gender",
+    "Employer_Category",
+    "Employment_Years",
+    "Credit_History_Years",
+    "Late_Payments_12M",
+    "Existing_Monthly_EMI",
+    "Quoted_Interest_Rate",
+    "Proposed_Monthly_EMI",
+    "Total_Income",
+    "Loan_to_Income",
+    "Total_EMI",
+    "Loan_to_Collateral"
+  ],
+  "numeric_columns": [
+    "Applicant_Income",
+    "Coapplicant_Income",
+    "Age",
+    "Dependents",
+    "Credit_Score",
+    "Existing_Loans",
+    "DTI_Ratio",
+    "Savings",
+    "Collateral_Value",
+    "Loan_Amount",
+    "Loan_Term",
+    "Employment_Years",
+    "Credit_History_Years",
+    "Late_Payments_12M",
+    "Existing_Monthly_EMI",
+    "Quoted_Interest_Rate",
+    "Proposed_Monthly_EMI",
+    "Total_Income",
+    "Loan_to_Income",
+    "Total_EMI",
+    "Loan_to_Collateral"
+  ],
+  "categorical_columns": [
+    "Employment_Status",
+    "Marital_Status",
+    "Loan_Purpose",
+    "Property_Area",
+    "Education_Level",
+    "Gender",
+    "Employer_Category"
+  ],
+  "categories": {
+    "Employment_Status": [
+      "Contract",
+      "Salaried",
+      "Self-employed",
+      "Unemployed"
+    ],
+    "Marital_Status": [
+      "Married",
+      "Single"
+    ],
+    "Loan_Purpose": [
+      "Business",
+      "Car",
+      "Education",
+      "Home",
+      "Personal"
+    ],
+    "Property_Area": [
+      "Rural",
+      "Semiurban",
+      "Urban"
+    ],
+    "Education_Level": [
+      "Graduate",
+      "Not Graduate"
+    ],
+    "Gender": [
+      "Female",
+      "Male"
+    ],
+    "Employer_Category": [
+      "Business",
+      "Government",
+      "MNC",
+      "Private",
+      "Unemployed"
+    ]
+  },
+  "classes": [
+    0,
+    1
+  ],
+  "positive_class": 1,
+  "decision_rule": "pipeline.predict",
+  "python_version": "3.13.2",
+  "packages": {
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.2.0",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1",
+    "joblib": "1.5.2"
+  }
+}
